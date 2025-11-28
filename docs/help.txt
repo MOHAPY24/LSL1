@@ -1,0 +1,10 @@
+LSL - Linux Subsystem for Linux
+Version 1.0.0, Copyright momo/Mohammed Mahmoud 2025, EPLv2 License
+
+Commands:
+    ls - List installed LSL OS's
+    drive [OS] - Run an installed LSL OS
+    get [OS] - Install an LSL OS
+    lsdow - List downloadable LSL OS's
+    help - Shows this menu
+    rm [OS] - Remove an LSL OS

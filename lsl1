@@ -1,0 +1,43 @@
+#!/bin/sh
+
+if [ "$EUID" -ne 0 ]; then
+    echo "Please run LSL as root or with sudo."
+    exit 1
+fi   
+
+if [ "$1" = "" ]; then
+    echo "[X] No command specified :("
+    cat docs/help.txt
+    exit 1
+elif [ "$1" = "ls" ]; then
+    python3 src/core.py list
+elif [ "$1" = "drive" ]; then
+    if [ "$2" = "" ]; then
+        echo "[X] No distro specified :("
+        exit 1
+    fi
+    python3 src/core.py run "$2"
+elif [ "$1" = "get" ]; then
+    if [ "$2" = "" ]; then
+        echo "[X] No distro specified :("
+        exit 1
+    fi
+    python3 src/core.py get "$2"
+
+elif [ "$1" = "lsdow" ]; then
+    python3 src/core.py list_download
+
+elif [ "$1" = "help" ]; then
+    cat docs/help.txt
+
+elif [ "$1" = "rm" ]; then
+    if [ "$2" = "" ]; then
+        echo "[X] No distro specified :("
+        exit 1
+    fi
+    python3 src/core.py remove "$2"
+
+else 
+    echo "[X] unkown command"
+    exit 1
+fi

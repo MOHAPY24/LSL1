@@ -4,7 +4,7 @@
 
 ![[Discord](https://discord.gg/TgB2Xh9VWJ)](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
-
+![License](https://img.shields.io/badge/EPL--2.0-blue?style=for-the-badge)
 
 ## Description
 LSL1 or Linux Subsystem For Linux v1 is a tool to run other linux distros through docker containers

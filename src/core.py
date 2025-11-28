@@ -28,6 +28,9 @@ if sys.argv[1] == "remove":
         )
     container_id = existing_container.stdout.decode().strip()
     subprocess.run(["docker", "rm", "-f", container_id])
+    with open("src/linsubsys/installed.json", 'w') as f:
+        installed["installed-oses"].pop(installed["installed-oses"].index(sys.argv[2].lower()))
+        f.write(json.dumps(installed, indent=4))
 
 if sys.argv[1] == "run":
     try:

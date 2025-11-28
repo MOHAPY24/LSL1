@@ -2,7 +2,6 @@
 ## A Linux subsystem for running other Distro's similar to WSL
 #### Version 0.9.1 OFFICAL 1
 
-![[Discord](https://discord.gg/TgB2Xh9VWJ)](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
 ![License](https://img.shields.io/badge/EPL--2.0-blue?style=for-the-badge)
 
